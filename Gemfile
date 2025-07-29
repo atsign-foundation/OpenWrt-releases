@@ -9,6 +9,8 @@ source 'https://rubygems.org'
 # Happy Jekylling!
 gem 'jekyll', '~> 3.9.2'
 
+gem "webrick"
+
 group :jekyll_plugins do
     gem 'jekyll-default-layout', '~> 0.1.4'
     gem 'jekyll-optional-front-matter', '~> 0.3.2'
