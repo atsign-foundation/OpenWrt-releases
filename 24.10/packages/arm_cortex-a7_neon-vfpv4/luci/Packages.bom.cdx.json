@@ -1,0 +1,1 @@
+{"specVersion":"1.4","bomFormat":"CycloneDX","serialNumber":"urn:uuid:4ac1b029-bdea-4389-8973-dc5f2d355a8b","version":1,"metadata":{"timestamp":"2025-08-04T13:19:00Z"},"components":[{"name":"luci-app-csshnpd","version":"25.195.43212~ca5c085","type":"application","licenses":[{"license":{"name":"GPL-2.0"}}]}]}

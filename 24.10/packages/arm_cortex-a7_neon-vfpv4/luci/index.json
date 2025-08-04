@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "architecture": "arm_cortex-a7_neon-vfpv4",
+  "packages": {
+    "luci-app-csshnpd": "25.195.43212~ca5c085"
+  }
+}
