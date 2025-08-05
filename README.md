@@ -6,6 +6,21 @@ Welcome to the Atsign OpenWrt packages download repo.
 
 [Releases](https://atsign-foundation.github.io/OpenWrt-releases/)
 
+## Why only versions 23.05 and 24.10?
+
+23.05 and 24.10 are the presently supported stable branches of OpenWrt.
+
+From the
+[OpenWrt version history](https://openwrt.org/about/history#openwrt_2203):
+
+> OpenWrt 22.03 has been declared End-of-Support in July 2024 and is
+no longer maintained or actively supported.
+
+### Why no apk packages for SNAPSHOT?
+
+SNAPSHOT is excluded here as NoPorts (`csshnpd` and `luci-app-csshnpd`) is
+available in upstream SNAPSHOT releases.
+
 ## How to use on OpenWrt
 
 ### Install key and feeds
