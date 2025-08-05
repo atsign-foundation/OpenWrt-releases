@@ -52,11 +52,14 @@ Once the key and feeds are in place run `opkg update` (or click the
 
 ### Installing NoPorts
 
-#### With LuCI web configuration
+#### With LuCI
 
 * Browse to System > Software
 * Type `cssh` into the Filter: box
 * Click `Install...` for the `luci-app-csshnpd` package
+* Click `Install` on the Details pop up.
+* Then `Dismiss` once the Executing package manager popup has completed
+(it should end with `Configuring luci-app-csshnpd.`)
 
 NB. installing `luci-app-csshnpd` will also install `csshnpd` as a dependency.
 
