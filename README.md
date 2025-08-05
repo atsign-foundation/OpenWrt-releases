@@ -1,60 +1,80 @@
-# fantastic-packages Packages Downloads
-Welcome to the fantastic-packages packages download page. Follow the links below to find the appropriate directory.
+# Atsign OpenWrt packages
 
-## Link
-[Releases](https://fantastic-packages.github.io/releases/)
+Welcome to the Atsign OpenWrt packages download repo.
 
-## How to use on OpenWRT
+## Releases website
 
-### Automatically install keyring and feeds
+[Releases](https://atsign-foundation.github.io/OpenWrt-releases/)
 
-- Install [fantastic-keyring](https://github.com/fantastic-packages/fantastic-keyring) and [fantastic-packages-feeds](https://github.com/fantastic-packages/fantastic-packages-feeds)
-- OR install [fantastic-feeds](https://github.com/openwrt-xiaomi/fantastic-feeds) by @remittor
+## How to use on OpenWrt
 
-``` shell
-# you can install from shell or `Software` menu in LuCI
-# for opkg
-opkg install fantastic-keyring
-opkg install fantastic-packages-feeds
-# for apk
-apk add --allow-untrusted fantastic-keyring
-apk add --allow-untrusted fantastic-packages-feeds
+### Install key and feeds
+
+#### Add Atsign's usign public key to opkg
+
+* Download `https://atsign-foundation.github.io/OpenWrt-releases/24.10/017dd9bf3c8f2e4a.pub`
+* Put it into `/etc/opkg/keys/017dd9bf3c8f2e4a`, note filename must be lowercase
+
+e.g.
+
+```sh
+cd /etc/opkg/keys
+wget https://atsign-foundation.github.io/OpenWrt-releases/24.10/017dd9bf3c8f2e4a.pub -O 017dd9bf3c8f2e4a
 ```
 
-### OR Manually install keychains and feeds
+#### Add the Atsign package feeds to `/etc/opkg/customfeeds.conf`
 
-#### Edit `/etc/opkg/customfeeds.conf`
-- Append the following to the EOF
+Open `/etc/opkg/customfeeds.conf` in your preferred editor and append the
+following to the end of the file:
+
 ```ini
-src/gz fantastic_packages_luci https://fantastic-packages.github.io/releases/<major.minor version>/packages/<package arch>/luci
-src/gz fantastic_packages_packages https://fantastic-packages.github.io/releases/<major.minor version>/packages/<package arch>/packages
-src/gz fantastic_packages_special https://fantastic-packages.github.io/releases/<major.minor version>/packages/<package arch>/special
+src/gz atsign_packages_luci https://atsign-foundation.github.io/OpenWrt-releases/<major.minor version>/packages/<package arch>/luci
+src/gz atsign_packages_packages https://atsign-foundation.github.io/OpenWrt-releases/<major.minor version>/packages/<package arch>/packages
 ```
 
-**Note: Please refer to this [matrix](https://github.com/fantastic-packages/packages/blob/master/.github/workflows/AutoBuild.yml#L61) for currently supported Version and Architecture.
-If your device is not listed, you can fork this repo and modify the matrix to add support for your device, then compile it with Github Action in your own repo. For details, please refer to [ForkTheProject.md](https://github.com/fantastic-packages/packages/blob/master/ForkTheProject.md)**
+NB. The file can also be edited in LuCI by browsing to System > Software.
+Then clicking on the `Configure opkg` button.
 
-- like this
+e.g. for the 24.10 releases on x86_64:
+
 ```ini
 # add your custom package feeds here
 #
 # src/gz example_feed_name http://www.example.com/path/to/files
-src/gz fantastic_packages_luci https://fantastic-packages.github.io/releases/21.02/packages/x86_64/luci
-src/gz fantastic_packages_packages https://fantastic-packages.github.io/releases/21.02/packages/x86_64/packages
-src/gz fantastic_packages_special https://fantastic-packages.github.io/releases/21.02/packages/x86_64/special
+src/gz atsign_packages_luci https://atsign-foundation.github.io/OpenWrt-releases/24.10/packages/x86_64/luci
+src/gz atsign_packages_packages https://atsign-foundation.github.io/OpenWrt-releases/24.10/packages/x86_64/packages
 ```
-#### Add usign pub-keys to opkg
-- Download `https://fantastic-packages.github.io/releases/<major.minor version>/<KEY-ID>.pub`
-- Put to `/etc/opkg/keys/<key-id>`, note filename must be lowercase
-- Fast script
-```bash
-KEYID=<KEY-ID>
-mkdir -p /etc/opkg/keys 2>/dev/null
-curl -sSL -o /etc/opkg/keys/${KEYID,,} "https://fantastic-packages.github.io/releases/<major.minor version>/${KEYID}.pub"
-```
-- OR
-```bash
-opkg update
-opkg install curl bash
-curl -sSL "https://fantastic-packages.github.io/releases/<major.minor version>/${KEYID}.sh" | bash
-```
+
+#### `opkg update`
+
+Once the key and feeds are in place run `opkg update` (or click the
+`Update lists...` button in the System > Software page on LuCI).
+
+### Installing NoPorts
+
+#### With LuCI web configuration
+
+* Browse to System > Software
+* Type `cssh` into the Filter: box
+* Click `Install...` for the `luci-app-csshnpd` package
+
+NB. installing `luci-app-csshnpd` will also install `csshnpd` as a dependency.
+
+Log out of LuCI then sign back in again to get NoPorts on the Network dropdown.
+
+#### Command line installation
+
+`opkg install luci-app-csshnpd` if you want the LuCI app
+
+or
+
+`opkg install csshnpd` if you just want the daemon and you're happy to do
+configuration using a text editor, and enrollment using the `at_enroll.sh`
+script.
+
+## Acknowledgements
+
+Thanks to the [Fantastic Packages](https://github.com/fantastic-packages/)
+team for providing the mechanism that's been forked to create this, and to
+[@systemcrash](https://github.com/systemcrash) for the
+[suggestion](https://github.com/openwrt/luci/pull/7832#issuecomment-3033002519)
