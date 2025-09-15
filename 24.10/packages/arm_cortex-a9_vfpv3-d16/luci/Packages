@@ -1,13 +1,13 @@
 Package: luci-app-csshnpd
-Version: 25.195.43212~ca5c085
+Version: 25.258.50518~e223d01
 Depends: libc, luci-base, csshnpd
 License: GPL-2.0
 Section: luci
 URL: https://github.com/openwrt/luci
 Architecture: all
 Installed-Size: 20480
-Filename: luci-app-csshnpd_25.195.43212~ca5c085_all.ipk
-Size: 3277
-SHA256sum: 4da939d270b3aa72ccfa50e50f42760f87809cb278047ccc7fa37710b6f86930
+Filename: luci-app-csshnpd_25.258.50518~e223d01_all.ipk
+Size: 3272
+SHA256sum: 2e32b1ab98b60fe3b951ad67d3ffe02147f4da950b29192408fa180f1268353e
 Description:  LuCI config app for NoPorts daemon (csshnpd)
 

@@ -2,6 +2,6 @@
   "version": 2,
   "architecture": "x86_64",
   "packages": {
-    "luci-app-csshnpd": "25.195.43212~ca5c085"
+    "luci-app-csshnpd": "25.258.50518~e223d01"
   }
 }
