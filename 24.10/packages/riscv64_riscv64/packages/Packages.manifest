@@ -12,7 +12,7 @@ Maintainer: Chris Swan <chris@atsign.com>
 Architecture: riscv64_riscv64
 Installed-Size: 1863680
 Filename: csshnpd_1.0.14-r1_riscv64_riscv64.ipk
-Size: 961358
-SHA256sum: a3c4802dc77465126fb2e897728706a06e08c9225d2581f49082cb8c1f7c8d36
+Size: 961318
+SHA256sum: ab9d6a1c34b21c7b24104e705d67e9ff954c3bd9c5917e09ca94f97c6a6c89a8
 Description:  A small and portable daemon for NoPorts.
 
