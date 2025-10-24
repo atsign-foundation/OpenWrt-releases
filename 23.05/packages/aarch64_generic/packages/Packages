@@ -1,12 +1,12 @@
 Package: csshnpd
-Version: 1.0.16-1
+Version: 1.0.17-1
 Depends: libc
 License: BSD-3-Clause
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 884576
-Filename: csshnpd_1.0.16-1_aarch64_generic.ipk
-Size: 883495
-SHA256sum: 5fa941d25828105dc4e53a5c5e3204c0d798f82b55f9c9b5236d41f912dcc4a5
+Installed-Size: 885928
+Filename: csshnpd_1.0.17-1_aarch64_generic.ipk
+Size: 884874
+SHA256sum: d7cec5aaec276035e74bb251190a85cc046c124ce2741cc557f4a041cb1c8a03
 Description:  A small and portable daemon for NoPorts.
 

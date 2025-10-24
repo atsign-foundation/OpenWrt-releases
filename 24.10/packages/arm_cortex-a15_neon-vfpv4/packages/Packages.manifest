@@ -1,18 +1,18 @@
 Package: csshnpd
-Version: 1.0.16-r1
+Version: 1.0.17-r1
 Depends: libc
 Source: /feed/packages/csshnpd/packages/csshnpd
 SourceName: csshnpd
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Section: net
-SourceDateEpoch: 1757944918
+SourceDateEpoch: 1761313208
 URL: https://noports.com
 Maintainer: Chris Swan <chris@atsign.com>
 Architecture: arm_cortex-a15_neon-vfpv4
 Installed-Size: 1863680
-Filename: csshnpd_1.0.16-r1_arm_cortex-a15_neon-vfpv4.ipk
-Size: 818323
-SHA256sum: 372aa48446e1c23e7b46a4bf92326a722219a76396493ed47dd95ea328cb886a
+Filename: csshnpd_1.0.17-r1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 819960
+SHA256sum: a3620f7419adf8fcd62a3cd2d6e7d64c041aefaacb59e8f63df18c942db5fbd6
 Description:  A small and portable daemon for NoPorts.
 

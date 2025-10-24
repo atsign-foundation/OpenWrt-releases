@@ -2,6 +2,6 @@
   "version": 2,
   "architecture": "riscv64_riscv64",
   "packages": {
-    "luci-app-csshnpd": "25.258.50518~e223d01"
+    "luci-app-csshnpd": "25.297.49208~d0b8994"
   }
 }

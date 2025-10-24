@@ -2,6 +2,6 @@
   "version": 2,
   "architecture": "x86_64",
   "packages": {
-    "csshnpd": "1.0.16-r1"
+    "csshnpd": "1.0.17-r1"
   }
 }

@@ -1,17 +1,17 @@
 Package: csshnpd
-Version: 1.0.16-1
+Version: 1.0.17-1
 Depends: libc
 Source: /feed/packages/csshnpd/packages/csshnpd
 SourceName: csshnpd
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Section: net
-SourceDateEpoch: 1757944918
+SourceDateEpoch: 1761313208
 Maintainer: Chris Swan <chris@atsign.com>
 Architecture: riscv64_riscv64
-Installed-Size: 841589
-Filename: csshnpd_1.0.16-1_riscv64_riscv64.ipk
-Size: 841706
-SHA256sum: 93bc895348266cffe2a837a0551df0e4de0eafcac5572a11b7296966eeb60f4a
+Installed-Size: 842262
+Filename: csshnpd_1.0.17-1_riscv64_riscv64.ipk
+Size: 842324
+SHA256sum: feabdfa63edc11632b301f712ded173a57967f47236f72b49a92ee898be70c38
 Description:  A small and portable daemon for NoPorts.
 

@@ -1,12 +1,12 @@
 Package: csshnpd
-Version: 1.0.16-1
+Version: 1.0.17-1
 Depends: libc
 License: BSD-3-Clause
 Section: net
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 813613
-Filename: csshnpd_1.0.16-1_arm_cortex-a7_neon-vfpv4.ipk
-Size: 813479
-SHA256sum: 95fdb4706bbbe722769608a23e0ed5c86f94506a2a4c4c2e380501414edbb30b
+Installed-Size: 814303
+Filename: csshnpd_1.0.17-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 814146
+SHA256sum: 35b9ba96d04fd11080295515217cc700961b8167c8b901fe95a7de7628bb6de1
 Description:  A small and portable daemon for NoPorts.
 

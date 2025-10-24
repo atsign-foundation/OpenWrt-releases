@@ -1,18 +1,18 @@
 Package: csshnpd
-Version: 1.0.16-r1
+Version: 1.0.17-r1
 Depends: libc
 Source: /feed/packages/csshnpd/packages/csshnpd
 SourceName: csshnpd
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Section: net
-SourceDateEpoch: 1757944918
+SourceDateEpoch: 1761313208
 URL: https://noports.com
 Maintainer: Chris Swan <chris@atsign.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 2048000
-Filename: csshnpd_1.0.16-r1_aarch64_cortex-a53.ipk
-Size: 877888
-SHA256sum: d1c179062debc82687e4b3bffc0e6b1f15c68e437ce9127a7d28e24f311b7557
+Filename: csshnpd_1.0.17-r1_aarch64_cortex-a53.ipk
+Size: 879277
+SHA256sum: c6b565d09328d7c982258636fd352c18e4f5f607acb8076b3b95bac95dab6aec
 Description:  A small and portable daemon for NoPorts.
 

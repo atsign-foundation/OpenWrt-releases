@@ -1,13 +1,13 @@
 Package: csshnpd
-Version: 1.0.16-r1
+Version: 1.0.17-r1
 Depends: libc
 License: BSD-3-Clause
 Section: net
 URL: https://noports.com
 Architecture: mipsel_24kc
 Installed-Size: 2652160
-Filename: csshnpd_1.0.16-r1_mipsel_24kc.ipk
-Size: 950469
-SHA256sum: 7839c38e68698e01d6dbea7cce61aefa8cbdec72ad0e0baf25e2208b902a9788
+Filename: csshnpd_1.0.17-r1_mipsel_24kc.ipk
+Size: 951840
+SHA256sum: 92d439fc46621ecf928451e4ad3b5ddde9139756ad0cd2fb0b8a22ead1306315
 Description:  A small and portable daemon for NoPorts.
 
